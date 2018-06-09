@@ -12,9 +12,9 @@ Build solidity with Angular front end, metamask and INFURA, using web3 on Rinked
 
 ## RunStep:
 - Open **Window PowerSell** on Win 10 (if you have not it, you can modify directly ` process.env.PASSWORD` and `process.env.INFURA_LINK` in file **deploy.js** inside **src/app/ethereum** folder ) and go to root project.
-- Run `npm install` first.
+- Run `npm install` first to install all dependences.
 - Run `$env:PASSWORD="your_password"` and run `$env:INFURA_LINK="your_link_inifura"`
-- Then run `npm run build-eth`, wait until **Deploy completed!!!**! And click `Ctrl+C` many times to stop process.
+- (You can ignore this step to run contract I deployed. Or you can deploy yourself by use this step ) Then run `npm run build-eth`, wait until **Deploy completed!!!**! And click `Ctrl+C` many times to stop process.
 - Then run `ng serve --open` to open your angular front-end web app.
 
 ## Step to test on front-end
