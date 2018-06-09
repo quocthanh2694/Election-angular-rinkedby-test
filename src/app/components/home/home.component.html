@@ -1,0 +1,22 @@
+<p>
+  home works!
+</p>
+<h3>Total candidates:  {{candidateCount}}</h3>
+<h3>List Candidate: </h3>
+<ul>
+  <li *ngFor="let candidate of candidateList">
+    id: {{candidate.id}}-
+    name: {{candidate.name}}-
+    voteCount: {{candidate.voteCount}}
+  </li>
+</ul>
+<div>Your account: {{yourAccount}}</div> 
+
+<select [(ngModel)]="voteAccountId">
+  <option *ngFor="let c of candidateList" [ngValue]="c.id">{{c.name}}</option>
+</select>
+
+<!-- <input type="text"  [(ngModel)]="voteAccountId" > -->
+<button (click)="vote()" >Vote</button>
+
+<h1 *ngIf="isLoadding" >Loading....</h1>
